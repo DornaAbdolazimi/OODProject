@@ -22,8 +22,13 @@ public class LoginWindow {
                 if (valid) {
                     Login.setVisible(false);
                     loginWindow.setVisible(false);
-                    MainWindow mainWindow = new MainWindow(isManager(textFieldUsername.getText(), passwordField.getPassword()));
+                    boolean isMan = isManager(textFieldUsername.getText(), passwordField.getPassword());
+                    MainWindow mainWindow = new MainWindow(isMan);
                     mainWindow.start();
+                    if (isMan){
+                        UserMaker userMaker = new UserMaker();
+                        userMaker.start();
+                    }
                 } else {
                     JOptionPane.showMessageDialog(null, "INVALID!!!");
                 }
@@ -38,7 +43,7 @@ public class LoginWindow {
 
     private boolean isManager(String text, char[] password) {
         // TODO: 5/24/2019
-        return false;
+        return true;
     }
 
     private boolean loginValidation(String text, char[] password) {
@@ -48,9 +53,9 @@ public class LoginWindow {
 
     private void start() {
         loginWindow.setContentPane(new LoginWindow().Login);
-        loginWindow.setLocationRelativeTo(null); // this line set the window in the center of the screen
-        loginWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         loginWindow.pack();
+        loginWindow.setLocationRelativeTo(null); // this line set the window in the center of the screen
+        loginWindow.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         loginWindow.setVisible(true);
 
     }

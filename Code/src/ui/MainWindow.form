@@ -27,12 +27,6 @@
           <orientation value="1"/>
         </properties>
       </component>
-      <component id="8e502" class="javax.swing.JSeparator">
-        <constraints>
-          <grid row="15" column="0" row-span="3" col-span="2" vsize-policy="6" hsize-policy="6" anchor="2" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties/>
-      </component>
       <component id="4918c" class="javax.swing.JLabel">
         <constraints>
           <grid row="19" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
@@ -79,9 +73,7 @@
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
-        <properties>
-          <text value=""/>
-        </properties>
+        <properties/>
       </component>
       <component id="13951" class="javax.swing.JLabel">
         <constraints>
@@ -146,9 +138,7 @@
             <preferred-size width="150" height="50"/>
           </grid>
         </constraints>
-        <properties>
-          <text value=""/>
-        </properties>
+        <properties/>
       </component>
       <component id="9aa3f" class="javax.swing.JLabel">
         <constraints>
@@ -196,14 +186,6 @@
           <grid row="17" column="3" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="2" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties/>
-      </component>
-      <component id="3ce56" class="javax.swing.JButton" binding="settleButton" default-binding="true">
-        <constraints>
-          <grid row="16" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="settle"/>
-        </properties>
       </component>
       <component id="afb8a" class="javax.swing.JLabel">
         <constraints>
@@ -318,22 +300,6 @@
           <text value="amount"/>
         </properties>
       </component>
-      <component id="c7643" class="javax.swing.JTextField" binding="idSettle">
-        <constraints>
-          <grid row="15" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-          </grid>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="e8355" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="14" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="factor ID:"/>
-        </properties>
-      </component>
       <component id="9b17e" class="javax.swing.JButton" binding="addOffButton" default-binding="true">
         <constraints>
           <grid row="14" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
@@ -342,107 +308,12 @@
           <text value="add off"/>
         </properties>
       </component>
-      <component id="9f07c" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="13" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <foreground color="-12441933"/>
-          <text value="Settle factor:"/>
-        </properties>
-      </component>
       <component id="6723d" class="javax.swing.JRadioButton" binding="percentRadioButton" default-binding="true">
         <constraints>
           <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="percent"/>
-        </properties>
-      </component>
-      <component id="8f4b2" class="javax.swing.JSeparator">
-        <constraints>
-          <grid row="12" column="3" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="2" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="bbf33" class="javax.swing.JRadioButton" binding="holdingsRadioButton" default-binding="true">
-        <constraints>
-          <grid row="7" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="holdings"/>
-        </properties>
-      </component>
-      <component id="397eb" class="javax.swing.JRadioButton" binding="debtRadioButton" default-binding="true">
-        <constraints>
-          <grid row="8" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="debt"/>
-        </properties>
-      </component>
-      <component id="90313" class="javax.swing.JRadioButton" binding="customersReportRadioButton" default-binding="true">
-        <constraints>
-          <grid row="9" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="customers report"/>
-        </properties>
-      </component>
-      <component id="e68bd" class="javax.swing.JRadioButton" binding="costAndBenefitRadioButton" default-binding="true">
-        <constraints>
-          <grid row="10" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="cost and benefit"/>
-        </properties>
-      </component>
-      <component id="ba49c" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="2" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="start date:"/>
-        </properties>
-      </component>
-      <component id="6c3ba" class="javax.swing.JTextField" binding="stReport">
-        <constraints>
-          <grid row="3" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-          </grid>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="f8a20" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="4" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="end date:"/>
-        </properties>
-      </component>
-      <component id="83ed" class="javax.swing.JTextField" binding="edReport">
-        <constraints>
-          <grid row="5" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-          </grid>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="17df1" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="6" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="types:"/>
-        </properties>
-      </component>
-      <component id="9915d" class="javax.swing.JButton" binding="getTheReportButton" default-binding="true">
-        <constraints>
-          <grid row="11" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="get the report"/>
         </properties>
       </component>
       <component id="d256a" class="javax.swing.JRadioButton" binding="sellRadioButton" default-binding="true">
@@ -464,11 +335,136 @@
       <component id="1a413" class="javax.swing.JTextArea" binding="txtReport">
         <constraints>
           <grid row="0" column="5" row-span="28" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="50"/>
+            <preferred-size width="300" height="50"/>
           </grid>
         </constraints>
         <properties>
           <text value=""/>
+        </properties>
+      </component>
+      <component id="e2291" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="17" column="0" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="2" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="2a181" class="javax.swing.JButton" binding="settleButton" default-binding="true">
+        <constraints>
+          <grid row="15" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="settle"/>
+        </properties>
+      </component>
+      <component id="e3f71" class="javax.swing.JTextField" binding="idSettle">
+        <constraints>
+          <grid row="14" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="60117" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="13" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="factor ID:"/>
+        </properties>
+      </component>
+      <component id="fbd90" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="12" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-12441933"/>
+          <text value="Settle factor:"/>
+        </properties>
+      </component>
+      <component id="f25c" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="11" column="3" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="2" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="53dea" class="javax.swing.JRadioButton" binding="holdingsRadioButton" default-binding="true">
+        <constraints>
+          <grid row="6" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="holdings"/>
+        </properties>
+      </component>
+      <component id="b4c93" class="javax.swing.JRadioButton" binding="debtRadioButton" default-binding="true">
+        <constraints>
+          <grid row="7" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="debt"/>
+        </properties>
+      </component>
+      <component id="7e89c" class="javax.swing.JRadioButton" binding="customersReportRadioButton" default-binding="true">
+        <constraints>
+          <grid row="8" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="customers report"/>
+        </properties>
+      </component>
+      <component id="e0dc2" class="javax.swing.JRadioButton" binding="costAndBenefitRadioButton" default-binding="true">
+        <constraints>
+          <grid row="9" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="cost and benefit"/>
+        </properties>
+      </component>
+      <component id="a062f" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="start date:"/>
+        </properties>
+      </component>
+      <component id="b7438" class="javax.swing.JTextField" binding="stReport">
+        <constraints>
+          <grid row="2" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="d9274" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="end date:"/>
+        </properties>
+      </component>
+      <component id="aacab" class="javax.swing.JTextField" binding="edReport">
+        <constraints>
+          <grid row="4" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="635d2" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="5" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="types:"/>
+        </properties>
+      </component>
+      <component id="21b94" class="javax.swing.JButton" binding="getTheReportButton" default-binding="true">
+        <constraints>
+          <grid row="10" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="get the report"/>
         </properties>
       </component>
     </children>
@@ -487,6 +483,12 @@
     <group name="buttonGroupFactor">
       <member id="d256a"/>
       <member id="7c8be"/>
+    </group>
+    <group name="buttonGroup1">
+      <member id="53dea"/>
+      <member id="b4c93"/>
+      <member id="7e89c"/>
+      <member id="e0dc2"/>
     </group>
   </buttonGroups>
 </form>

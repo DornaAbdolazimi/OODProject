@@ -1,3 +1,5 @@
+package logic;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 
@@ -33,6 +35,7 @@ public class Main {
             Order order = new Order(1);
             order.readDataFromDB(myCon);
             System.out.println(order.getOrderItems().get(0).price());
+            System.out.println(Group.findGroupIdByName("drinks", myCon));
 
 
         }catch (Exception e){
@@ -42,16 +45,16 @@ public class Main {
 
 
 
-       /* Item book = new Item(1, "book", 10);
-        Item pen = new Item(2, "pen", 2);
-        CustomerSalesman Hana = new CustomerSalesman(1);
-        OrderItems books = new OrderItems(book, 3);
-        OrderItems pens = new OrderItems(pen, 5);
-        ArrayList <OrderItems> myArraylist = new ArrayList<OrderItems>();
+       /* logic.Item book = new logic.Item(1, "book", 10);
+        logic.Item pen = new logic.Item(2, "pen", 2);
+        logic.CustomerSalesman Hana = new logic.CustomerSalesman(1);
+        logic.OrderItems books = new logic.OrderItems(book, 3);
+        logic.OrderItems pens = new logic.OrderItems(pen, 5);
+        ArrayList <logic.OrderItems> myArraylist = new ArrayList<logic.OrderItems>();
         myArraylist.add(books);
         myArraylist.add(pens);
-        Date today = new Date(2019, 5, 7, 23);
-        Order myOrder = new Order(1, today, 0, myArraylist, true);
+        logic.Date today = new logic.Date(2019, 5, 7, 23);
+        logic.Order myOrder = new logic.Order(1, today, 0, myArraylist, true);
         System.out.print("The price of your order is ");
         System.out.println(myOrder.price());*/
     }

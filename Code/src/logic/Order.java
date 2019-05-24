@@ -1,3 +1,5 @@
+package logic;
+
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;
@@ -116,7 +118,7 @@ public class Order {
                 }
             }
             if(temp==false){
-                System.out.printf("No Order with this ID.");
+                System.out.printf("No logic.Order with this ID.");
                 return;
             }
             temp = false;

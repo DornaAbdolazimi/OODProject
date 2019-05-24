@@ -1,14 +1,19 @@
 package ui;
 
+import logic.Group;
+import logic.Item;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.DriverManager;
 
 /**
  * Made by Peyman on 5/23/2019.
  */
 public class MainWindow {
-    JFrame mainWindow = new JFrame("MainWindow");
+    private JFrame mainWindow = new JFrame("MainWindow");
     private JPanel panel1;
     private JTextField nameItem;
     private JTextField priceItem;
@@ -40,11 +45,9 @@ public class MainWindow {
     private JTextField edReport;
     private JRadioButton sellRadioButton;
     private JRadioButton buyRadioButton;
-    private boolean manager;
 
 
     MainWindow(boolean manager) {
-        this.manager = manager;
         getTheReportButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -174,7 +177,17 @@ public class MainWindow {
     }
 
     private void makeItem(String name, float price, int quantity, String group) {
-        // TODO: 5/24/2019
+
+        try {
+            Connection myCon = DriverManager.getConnection("jdbc:mysql://localhost:3306/OOD", "root", "09132035660");
+            Item item = new Item(Item.getNewID(myCon), name, Math.round(price), quantity);
+            item.setGroupId(Group.findGroupIdByName(group,myCon));
+            item.insertDataIntoDB(myCon);
+
+        }catch (Exception e){
+            System.out.println("fail in makeItem.");
+        }
+
     }
 
     private void makeOff(boolean isAmount, int itemID, float offValue, int scoreST, int scoreED, int yearST, int monthST, int dayST, int yearED, int monthED, int dayED) {
@@ -193,7 +206,7 @@ public class MainWindow {
 
     private String getReportCustomer(int yearST, int monthST, int dayST, int yearED, int monthED, int dayED) {
         // TODO: 5/24/2019  
-        return "getReportCustomer";
+        return "report\treport\treport\nreport\treport\treport\nreport\treport\treport\nreport\treport\treport\nreport\treport\treport\nreport\treport\treport\n";
     }
 
     private String getReportCostAndBenefit(int yearST, int monthST, int dayST, int yearED, int monthED, int dayED) {
@@ -203,15 +216,10 @@ public class MainWindow {
 
     void start() {
         mainWindow.setContentPane(panel1);
-        mainWindow.setLocationRelativeTo(null); // this line set the window in the center of thr screen
-        mainWindow.setDefaultCloseOperation(mainWindow.EXIT_ON_CLOSE);
         mainWindow.pack();
+        mainWindow.setLocationRelativeTo(null); // this line set the window in the center of thr screen
+        mainWindow.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         mainWindow.setVisible(true);
 
-    }
-
-
-    private void createUIComponents() {
-        // TODO: place custom component creation code here
     }
 }
