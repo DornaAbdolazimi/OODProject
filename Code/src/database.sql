@@ -156,7 +156,7 @@ CREATE TABLE `item` (
 
 LOCK TABLES `item` WRITE;
 /*!40000 ALTER TABLE `item` DISABLE KEYS */;
-INSERT INTO `item` VALUES (1,'San Star Banana Juice',2,90000,0),(2,'Sahar Bread',1,30000,0);
+INSERT INTO `item` VALUES (1,'San Star Banana Juice',2,90000,0),(2,'Sahar Bread',1,30000,0),(3,'KitKat',1,30000,0);
 /*!40000 ALTER TABLE `item` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -184,6 +184,62 @@ LOCK TABLES `item_group` WRITE;
 /*!40000 ALTER TABLE `item_group` DISABLE KEYS */;
 INSERT INTO `item_group` VALUES (2,'drinks'),(1,'general');
 /*!40000 ALTER TABLE `item_group` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `off`
+--
+
+DROP TABLE IF EXISTS `off`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `off` (
+  `endDate` date NOT NULL,
+  `startDate` date NOT NULL,
+  `item_id` int(11) NOT NULL,
+  `id` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `off_id_uindex` (`id`),
+  KEY `off_item_id_fk` (`item_id`),
+  CONSTRAINT `off_item_id_fk` FOREIGN KEY (`item_id`) REFERENCES `item` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `off`
+--
+
+LOCK TABLES `off` WRITE;
+/*!40000 ALTER TABLE `off` DISABLE KEYS */;
+/*!40000 ALTER TABLE `off` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `off_customer_rank`
+--
+
+DROP TABLE IF EXISTS `off_customer_rank`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `off_customer_rank` (
+  `id` int(11) NOT NULL,
+  `name` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
+  `off_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `off_customer_rank_id_uindex` (`id`),
+  UNIQUE KEY `off_customer_rank_name_uindex` (`name`),
+  UNIQUE KEY `off_customer_rank_off_id_uindex` (`off_id`),
+  CONSTRAINT `off_customer_rank_off_id_fk` FOREIGN KEY (`off_id`) REFERENCES `off` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `off_customer_rank`
+--
+
+LOCK TABLES `off_customer_rank` WRITE;
+/*!40000 ALTER TABLE `off_customer_rank` DISABLE KEYS */;
+/*!40000 ALTER TABLE `off_customer_rank` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -299,29 +355,6 @@ LOCK TABLES `salesman` WRITE;
 INSERT INTO `salesman` VALUES (1,' San Star Company');
 /*!40000 ALTER TABLE `salesman` ENABLE KEYS */;
 UNLOCK TABLES;
-
---
--- Table structure for table `test`
---
-
-DROP TABLE IF EXISTS `test`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
-CREATE TABLE `test` (
-  `personid` int(50) NOT NULL AUTO_INCREMENT,
-  PRIMARY KEY (`personid`)
-) ENGINE=InnoDB AUTO_INCREMENT=13231232 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `test`
---
-
-LOCK TABLES `test` WRITE;
-/*!40000 ALTER TABLE `test` DISABLE KEYS */;
-INSERT INTO `test` VALUES (13231231);
-/*!40000 ALTER TABLE `test` ENABLE KEYS */;
-UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -332,4 +365,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-05-24 21:44:42
+-- Dump completed on 2019-05-24 22:19:48
