@@ -99,6 +99,20 @@ public class Cashier {
 
     }
 
+    public void createCustomerSalesman(String name, float price, int quantity, String group) {
+        try {
+
+            Item item = new Item(DBManager.getNewItemID(), name, Math.round(price), quantity);
+            item.setGroupId(new Group(group).findGroupIdByName());
+            DBManager.insertNewItemIntoDB(item);
+        }
+        catch (Exception e){
+
+        }
+
+
+    }
+
 
 
 }

@@ -156,7 +156,7 @@ CREATE TABLE `item` (
 
 LOCK TABLES `item` WRITE;
 /*!40000 ALTER TABLE `item` DISABLE KEYS */;
-INSERT INTO `item` VALUES (1,'San Star Banana Juice',2,90000,0),(2,'Sahar Bread',1,30000,0),(3,'KitKat',1,30000,0);
+INSERT INTO `item` VALUES (-1,'sfasdf',1,1312,0),(1,'San Star Banana Juice',2,90000,0),(2,'Sahar Bread',1,30000,0),(3,'KitKat',1,30000,0),(4,'Dorna Item',1,2000,0),(5,'test item',1,24234,0),(6,'ssdfa',1,242,243),(7,'fdsgsg',1,243,3423);
 /*!40000 ALTER TABLE `item` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -254,10 +254,10 @@ CREATE TABLE `order_item` (
   `item_id` int(11) NOT NULL,
   `quantity` int(11) NOT NULL,
   `price` int(11) NOT NULL,
-  PRIMARY KEY (`item_id`),
-  KEY `order-item_order_id_fk` (`order_id`),
-  CONSTRAINT `order-item_item_id_fk` FOREIGN KEY (`item_id`) REFERENCES `item` (`id`),
-  CONSTRAINT `order-item_order_id_fk` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+  PRIMARY KEY (`order_id`,`item_id`),
+  KEY `order_item_item_id_fk` (`item_id`),
+  CONSTRAINT `order-item_order_id_fk` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `order_item_item_id_fk` FOREIGN KEY (`item_id`) REFERENCES `item` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -283,6 +283,8 @@ CREATE TABLE `orders` (
   `is_selling` tinyint(1) NOT NULL,
   `other_side` int(11) NOT NULL,
   `date` datetime DEFAULT NULL,
+  `final_price` int(11) NOT NULL,
+  `done_price` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `order_id_uindex` (`id`),
   KEY `order_customer_salesman_id_fk` (`other_side`),
@@ -296,7 +298,7 @@ CREATE TABLE `orders` (
 
 LOCK TABLES `orders` WRITE;
 /*!40000 ALTER TABLE `orders` DISABLE KEYS */;
-INSERT INTO `orders` VALUES (1,0,1,'2019-05-23 23:50:48'),(3,1,3,'1970-01-01 00:00:00'),(4,1,3,'1970-01-01 00:00:00'),(5,1,3,'1970-01-01 00:00:00'),(6,1,3,'1970-01-01 00:00:00'),(7,1,3,'1970-01-01 00:00:00');
+INSERT INTO `orders` VALUES (1,0,1,'2019-05-23 23:50:48',0,0),(3,1,3,'1970-01-01 00:00:00',0,0),(4,1,3,'1970-01-01 00:00:00',0,0),(5,1,3,'1970-01-01 00:00:00',0,0),(6,1,3,'1970-01-01 00:00:00',0,0),(7,1,3,'1970-01-01 00:00:00',0,0);
 /*!40000 ALTER TABLE `orders` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -365,4 +367,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-05-24 22:19:48
+-- Dump completed on 2019-06-06  1:24:06
