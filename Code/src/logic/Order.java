@@ -78,8 +78,8 @@ public class Order {
         this.done = true;
     }
 
-    public double price() {
-        double res = 0;
+    public int price() {
+        int res = 0;
         for (int i = 0; i < orderItems.size(); i++) {
             res += orderItems.get(i).price();
         }

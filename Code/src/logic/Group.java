@@ -11,6 +11,13 @@ public class Group {
     private Group superGroup;
     boolean isRoot;
 
+
+
+    public Group (String name){
+        this.name = name;
+
+    }
+
     public void setId(int id) {
         this.id = id;
     }
@@ -32,6 +39,7 @@ public class Group {
     }
 
     public Group getSuperGroup() {
+
         return superGroup;
     }
 
@@ -43,21 +51,9 @@ public class Group {
         isRoot = root;
     }
 
-    public static int findGroupIdByName(String name){
-        try{
-            Connection myCon = DriverManager.getConnection("jdbc:mysql://localhost:3306/OOD", "root", "09132035660");
-            Statement myState = myCon.createStatement();
-            ResultSet myRes = myState.executeQuery("select * from item_group");
-            while(myRes.next()) {
-                if (myRes.getString("name").equals( name))
-                    return myRes.getInt("id");
-
-            }
-
-        }catch (Exception e){
-
-        }
-        return -1;
+    public  int findGroupIdByName(){
+        DBManager.readGroupInfoFromDB(this);
+        return id;
     }
 
 }

@@ -89,7 +89,7 @@ public class Cashier {
         try {
 
             Item item = new Item(DBManager.getNewItemID(), name, Math.round(price), quantity);
-            item.setGroupId(Group.findGroupIdByName(group));
+            item.setGroupId(new Group(group).findGroupIdByName());
             DBManager.insertNewItemIntoDB(item);
         }
         catch (Exception e){

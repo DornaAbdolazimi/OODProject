@@ -350,7 +350,7 @@ public abstract  class  DBManager {
             pstmt.setInt(1, order.getId());
             pstmt.setBoolean(2, order.isSelling());
             pstmt.setInt(3, order.getOtherSide());
-//            pstmt.setDate(4, Date.valueOf(LocalDate.EPOCH)); //TODO
+//          pstmt.setDate(4, Date.valueOf(LocalDate.EPOCH)); //TODO
             //TODO: add order items as well
             pstmt.executeUpdate();
 
@@ -378,6 +378,23 @@ public abstract  class  DBManager {
             }
             return -1;
 
+    }
+
+
+    public static void readGroupInfoFromDB (Group group){
+        try{
+            myCon = DriverManager.getConnection("jdbc:mysql://localhost:3306/OOD", "root", "09132035660");
+            Statement myState = myCon.createStatement();
+            ResultSet myRes = myState.executeQuery("select * from item_group");
+            while(myRes.next()) {
+                if (myRes.getString("name").equals( group.getName())){
+                    group.setId(myRes.getInt("id"));
+                }
+            }
+
+        }catch (Exception e){
+
+        }
     }
 
 

@@ -33,7 +33,7 @@ public class OrderItems {
         this.quantity = quantity;
     }
 
-    public double price() {
+    public int price() {
         return item.getPrice() * quantity;
     }
 }
