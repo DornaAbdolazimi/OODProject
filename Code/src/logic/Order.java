@@ -1,11 +1,7 @@
 package logic;
 
-import java.sql.Connection;
+import java.sql.*;
 import java.sql.Date;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.Statement;
-import java.time.LocalDate;
 import java.util.ArrayList;
 
 /**
@@ -152,7 +148,7 @@ public class Order {
             pstmt.setInt(1, id);
             pstmt.setBoolean(2, isSelling);
             pstmt.setInt(3, otherSide);
-            pstmt.setDate(4, Date.valueOf(LocalDate.EPOCH)); //TODO
+//            pstmt.setDate(4, Date.valueOf(LocalDate.EPOCH)); //TODO
             pstmt.executeUpdate();
         }
         catch(Exception e){	System.out.println("fail!");}

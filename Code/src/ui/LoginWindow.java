@@ -30,7 +30,7 @@ public class LoginWindow {
                         userMaker.start();
                     }
                 } else {
-                    JOptionPane.showMessageDialog(null, "INVALID!!!");
+                    JOptionPane.showMessageDialog(null, "INVALID username or password");
                 }
             }
         });
