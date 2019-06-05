@@ -30,7 +30,9 @@ public class Order {
     }
 
 
-
+    public void addOrderItems( OrderItems item) {
+        orderItems.add(item);
+    }
 
     public void setOtherSide(int otherSide) {
         this.otherSide = otherSide;
@@ -84,77 +86,9 @@ public class Order {
         return res;
     }
 
-    public static int getNewID (Connection myCon){
-        try{
-            Statement myState = myCon.createStatement();
-            ResultSet myRes = myState.executeQuery("select * from orders" );
-            int last_id = 0;
-            while(myRes.next()) {
-                last_id = myRes.getInt("id");
-            }
-            return last_id+1;
-
-        }catch (Exception e){
-
-        }
-        return -1;
-    }
-
-    public void readDataFromDB(Connection myCon){
-        try  {
-            Statement myState = myCon.createStatement();
-            boolean temp = false;
-            ResultSet myRes = myState.executeQuery("select * from orders");
-            while(myRes.next()) {
-                if(myRes.getInt(db_id)==this.id){
-                    temp = true;
-                    this.isSelling = myRes.getBoolean(db_is_selling);
-                    this.otherSide = myRes.getInt(db_other_side);
-                    this.id= myRes.getInt(db_id);
-                }
-            }
-            if(temp==false){
-                System.out.printf("No logic.Order with this ID.");
-                return;
-            }
-            temp = false;
-            myRes = myState.executeQuery("select * from order_item");
-            while(myRes.next()) {
-                if(myRes.getInt(db_order_id)==this.id){
-                    temp = true;
-                    int itemId = myRes.getInt(db_item_id);
-                    Item item = new Item(itemId);
-                    item.readDataFromDB(myCon);
-                    OrderItems orderItem = new OrderItems(item,
-                            myRes.getInt(db_quantity), myRes.getInt(db_price));
-                    orderItems.add(orderItem);
-
-                }
-            }
-
-        }
-        catch(Exception e){	System.out.println("fail");}
 
 
-    }
 
-    public void insertDataIntoDB(Connection myCon){
-        try  {
-            String sql = "insert into "+ db_order + "("
-                    + db_id + ","+ db_is_selling + ","+ db_other_side + ","+ db_date +") VALUES(?,?,?,?)";
-
-            PreparedStatement pstmt = myCon.prepareStatement(sql,
-                    Statement.RETURN_GENERATED_KEYS);
-            pstmt.setInt(1, id);
-            pstmt.setBoolean(2, isSelling);
-            pstmt.setInt(3, otherSide);
-//            pstmt.setDate(4, Date.valueOf(LocalDate.EPOCH)); //TODO
-            pstmt.executeUpdate();
-        }
-        catch(Exception e){	System.out.println("fail!");}
-
-
-    }
 
 
 

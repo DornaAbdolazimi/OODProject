@@ -1,5 +1,6 @@
 package ui;
 
+import logic.Cashier;
 import logic.Group;
 import logic.Item;
 
@@ -47,7 +48,8 @@ public class MainWindow {
     private JRadioButton buyRadioButton;
 
 
-    MainWindow(boolean manager) {
+    MainWindow(Cashier cashier) {
+        boolean manager =  cashier.isManager();
         getTheReportButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -125,7 +127,7 @@ public class MainWindow {
                 float price = Float.parseFloat(priceItem.getText());
                 int quantity = Integer.parseInt(quanItem.getText());
 
-                makeItem(name, price, quantity, group);
+                cashier.makeItem(name, price, quantity, group);
             }
         });
         addFactorButton.addActionListener(new ActionListener() {
@@ -176,19 +178,7 @@ public class MainWindow {
         // TODO: 5/24/2019  
     }
 
-    private void makeItem(String name, float price, int quantity, String group) {
 
-        try {
-            Connection myCon = DriverManager.getConnection("jdbc:mysql://localhost:3306/OOD", "root", "09132035660");
-            Item item = new Item(Item.getNewID(myCon), name, Math.round(price), quantity);
-            item.setGroupId(Group.findGroupIdByName(group,myCon));
-            item.insertDataIntoDB(myCon);
-
-        }catch (Exception e){
-            System.out.println("fail in makeItem.");
-        }
-
-    }
 
     private void makeOff(boolean isAmount, int itemID, float offValue, int scoreST, int scoreED, int yearST, int monthST, int dayST, int yearED, int monthED, int dayED) {
         // TODO: 5/24/2019

@@ -1,6 +1,7 @@
 package logic;
 
 import java.sql.Connection;
+import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
@@ -42,8 +43,9 @@ public class Group {
         isRoot = root;
     }
 
-    public static int findGroupIdByName(String name, Connection myCon){
+    public static int findGroupIdByName(String name){
         try{
+            Connection myCon = DriverManager.getConnection("jdbc:mysql://localhost:3306/OOD", "root", "09132035660");
             Statement myState = myCon.createStatement();
             ResultSet myRes = myState.executeQuery("select * from item_group");
             while(myRes.next()) {

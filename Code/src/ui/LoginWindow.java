@@ -1,5 +1,8 @@
 package ui;
 
+import logic.Cashier;
+import logic.DBManager;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -23,7 +26,7 @@ public class LoginWindow {
                     Login.setVisible(false);
                     loginWindow.setVisible(false);
                     boolean isMan = isManager(textFieldUsername.getText(), passwordField.getPassword());
-                    MainWindow mainWindow = new MainWindow(isMan);
+                    MainWindow mainWindow = new MainWindow(new Cashier(DBManager.getNewCashierID())); //TODO !!!!!!!!!!1
                     mainWindow.start();
                     if (isMan){
                         UserMaker userMaker = new UserMaker();
