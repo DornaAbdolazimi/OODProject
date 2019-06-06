@@ -29,7 +29,7 @@ public class LoginWindow {
                     MainWindow mainWindow = new MainWindow(new Cashier(DBManager.getNewCashierID())); //TODO !!!!!!!!!!1
                     mainWindow.start();
                     if (isMan){
-                        UserMaker userMaker = new UserMaker();
+                        UserMaker userMaker = new UserMaker(new Cashier(DBManager.getNewCashierID())); //TODO !!!!!!!!
                         userMaker.start();
                     }
                 } else {

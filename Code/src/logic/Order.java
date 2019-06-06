@@ -1,6 +1,5 @@
 package logic;
 
-import java.sql.*;
 import java.sql.Date;
 import java.util.ArrayList;
 
@@ -13,7 +12,7 @@ public class Order {
     public static String db_order_id = "order_id";
     public static String db_item_id = "item_id";
     public static String db_quantity = "quantity";
-    public static String db_price = "price";
+    public static String db_price = "getPrice";
     public static String db_is_selling = "is_selling";
     public static String db_other_side = "other_side";
     public static String db_date = "date";
@@ -21,16 +20,33 @@ public class Order {
     private int id;
     private Date date;
     private boolean isSelling; //0: buying, 1: Selling
-    private ArrayList<OrderItems> orderItems= new ArrayList<OrderItems>();
+    private ArrayList<OrderItem> orderItems= new ArrayList<OrderItem>();
     private boolean done;   //state
     private int otherSide;
+    private  int paidPrice;
 
     public Order(int id){
         this.id = id;
     }
 
 
-    public void addOrderItems( OrderItems item) {
+    public int getTotalPrice() {
+        int res = 0;
+        for (int i = 0; i < orderItems.size(); i++) {
+            res += orderItems.get(i).getPrice();
+        }
+        return res;
+    }
+
+    public void setPaidPrice(int paidPrice) {
+        this.paidPrice = paidPrice;
+    }
+
+    public int getPaidPrice() {
+        return paidPrice;
+    }
+
+    public void addOrderItems(OrderItem item) {
         orderItems.add(item);
     }
 
@@ -66,7 +82,7 @@ public class Order {
         this.isSelling = selling;
     }
 
-    public ArrayList<OrderItems> getOrderItems() {
+    public ArrayList<OrderItem> getOrderItems() {
         return orderItems;
     }
 
@@ -78,13 +94,7 @@ public class Order {
         this.done = true;
     }
 
-    public int price() {
-        int res = 0;
-        for (int i = 0; i < orderItems.size(); i++) {
-            res += orderItems.get(i).price();
-        }
-        return res;
-    }
+
 
 
 

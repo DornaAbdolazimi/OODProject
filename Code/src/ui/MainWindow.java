@@ -147,7 +147,7 @@ public class MainWindow {
                         try {
                             String[] itemsAndQuantity = txtFactor.getText().split("\n");
 
-                            makeFactor(isSell, personID, itemsAndQuantity, year, month, day);
+                            cashier.createOrder(isSell, personID, itemsAndQuantity, year, month, day);
                         } catch (Exception err) {
                             JOptionPane.showMessageDialog(null, "err in items and quantity");
                         }
@@ -171,10 +171,6 @@ public class MainWindow {
     }
 
     private void settleFactor(int i) {
-        // TODO: 5/24/2019  
-    }
-
-    private void makeFactor(boolean isSell, int personID, String[] itemsAndQuantity, int year, int month, int day) {
         // TODO: 5/24/2019  
     }
 

@@ -16,7 +16,17 @@ public class Group {
     public Group (String name){
         this.name = name;
 
+
     }
+
+    public Group (int id){
+
+        this.id = id;
+
+
+    }
+
+
 
     public void setId(int id) {
         this.id = id;
@@ -55,5 +65,8 @@ public class Group {
         DBManager.readGroupInfoFromDB(this);
         return id;
     }
+
+
+
 
 }

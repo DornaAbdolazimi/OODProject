@@ -1,9 +1,8 @@
 package logic;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
+import java.sql.Date;
+import java.util.ArrayList;
 
 /**
  * Created by Hana on 5/7/2019.
@@ -16,9 +15,15 @@ public class Item {
     private int currentPrice = 0;
     private int groupId = 1;
     private  int quantity = 0;
+    private ArrayList<Quantity>  quantities= new ArrayList<Quantity>();
 
     public Item(int id) {
         this.id = id;
+
+    }
+
+    public Item(String name) {
+        this.name = name;
 
     }
 
@@ -27,7 +32,12 @@ public class Item {
         this.name = name;
         this.currentPrice = currentPrice;
         this.quantity = quantity;
+        quantities.add(new Quantity(new Date(System.currentTimeMillis()), new Time(System.currentTimeMillis()), id, quantity));
 
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public int getId() {
@@ -69,6 +79,29 @@ public class Item {
 
 
 
+    public void increaseQuantity (int amount){
+
+    }
+
+    public void decreaseQuantity (int amount){
+
+        if(quantity>=amount){
+            this.quantity = quantity -amount;
+            if(quantities.size()>0) {
+                quantities.get(quantities.size() - 1).setEndDate(new Date(System.currentTimeMillis()));
+
+                quantities.add((new Quantity(new Date(System.currentTimeMillis()), new Time(System.currentTimeMillis()), id, quantity)));
+            }
+        }
 
 
+    }
+
+    public ArrayList<Quantity> getQuantities() {
+        return quantities;
+    }
+
+    public void setQuantities(ArrayList<Quantity> quantities) {
+        this.quantities = quantities;
+    }
 }

@@ -3,18 +3,24 @@ package logic;
 /**
  * Created by Hana on 5/7/2019.
  */
-public class OrderItems {
+public class OrderItem {
 
     private Item item;
     private int quantity;
     private int price;
+    private int orderID;
 
 
 
-    public OrderItems(Item item, int quantity, int price) {
+    public OrderItem(Item item, int quantity, int price, int orderID ){
         this.item = item;
         this.quantity = quantity;
         this.price = price;
+        this.orderID = orderID;
+    }
+
+    public int getOrder() {
+        return orderID;
     }
 
     public Item getItem() {
@@ -33,7 +39,7 @@ public class OrderItems {
         this.quantity = quantity;
     }
 
-    public int price() {
+    public int getPrice() {
         return item.getPrice() * quantity;
     }
 }

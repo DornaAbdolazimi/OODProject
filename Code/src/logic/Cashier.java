@@ -86,32 +86,80 @@ public class Cashier {
 
 
     public void makeItem(String name, float price, int quantity, String group) {
-        try {
-
             Item item = new Item(DBManager.getNewItemID(), name, Math.round(price), quantity);
-            item.setGroupId(new Group(group).findGroupIdByName());
+            item.setGroupId(DBManager.getGroupWithName(group).getId());
             DBManager.insertNewItemIntoDB(item);
-        }
-        catch (Exception e){
+
+
+    }
+
+    public void makeSalesman( String official, String email) {
+
+        CustomerSalesman salesman = new CustomerSalesman(DBManager.getNewCustomerSalesmanID());
+        salesman.setCustomer(false);
+        salesman.setOfficialName(official);
+        salesman.setEmail(email);
+        salesman.setPhoneNumber(String.valueOf(Math.random())); //TODO
+        DBManager.insertNewCustomerSalesmanIntoDB(salesman);
+
+
+
+    }
+
+    public void makeCustomer(String firstName, String lastName, String email) {
+        CustomerSalesman customer = new CustomerSalesman(DBManager.getNewCustomerSalesmanID());
+        customer.setCustomer(true);
+        customer.setFirstName(firstName);
+        customer.setLastName(lastName);
+        customer.setEmail(email);
+        customer.setPhoneNumber(String.valueOf(Math.random())); //TODO
+        DBManager.insertNewCustomerSalesmanIntoDB(customer);
+
+    }
+
+    public void createGroup (String name, String parentName){
+        Group group = new Group(name);
+        group.setId(DBManager.getNewGroupID());
+
+        if(!parentName.equals("")){
+            Group parent = new Group(parentName);
+            DBManager.readGroupInfoFromDB(parent);
+            group.setSuperGroup(parent);
 
         }
 
 
     }
 
-    public void createCustomerSalesman(String name, float price, int quantity, String group) {
-        try {
+    public void createOrder (boolean isSell, int personID,
+                             String[] itemsAndQuantity, int year, int month, int day){
 
-            Item item = new Item(DBManager.getNewItemID(), name, Math.round(price), quantity);
-            item.setGroupId(new Group(group).findGroupIdByName());
-            DBManager.insertNewItemIntoDB(item);
+        Order order = new Order(DBManager.getNewOrderID());
+        order.setSelling(isSell);
+        order.setOtherSide(personID);
+        java.sql.Date date = new java.sql.Date(System.currentTimeMillis() );
+        order.setDate(date);
+        //TODO there is no paid getPrice in UI
+        order.setPaidPrice(0);
+        for (int i = 0; i < itemsAndQuantity.length; i++) {
+            String itemName = itemsAndQuantity[i].split("-")[0]; //TODO
+            Item item = DBManager.getItemWithName(itemName);
+            for (int j= 0; j < item.getQuantities().size() ; j++) {
+                System.out.println("quantity");
+                System.out.println(item.getQuantities().get(j).getQuantity());
+            }
+            int quantity = Integer.parseInt(itemsAndQuantity[i].split("-")[1]); //TODO change it
+            OrderItem orderItem = new OrderItem(item, quantity, item.getPrice()*quantity, order.getId());
+            order.addOrderItems(orderItem);
+
+            item.decreaseQuantity(quantity);
+            DBManager.updateItemQuantityInDB(item);
         }
-        catch (Exception e){
-
-        }
-
-
+        DBManager.insertNewOrderIntoDB (order);
+        //TODO Customer's score should be updated
     }
+
+
 
 
 
