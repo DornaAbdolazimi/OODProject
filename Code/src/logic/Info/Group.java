@@ -1,9 +1,6 @@
-package logic;
+package logic.Info;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import logic.DBManager.DBManager;
 
 public class Group {
     private int id;

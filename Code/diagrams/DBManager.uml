@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="454.3229166666667" y="154.86783854166652">logic.Sell_Buy</node>
+    <node x="-653.0" y="-479.5">ui</node>
+    <node x="-322.0" y="233.5">logic.User</node>
+    <node x="487.91666666666663" y="9.867838541666515">logic.Info</node>
+    <node x="0.0" y="289.8678385416665">logic.DBManager.DBManager</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="1.0" x="0.0" y="0.0" />
+  <SelectedNodes>
+    <node>logic.DBManager.DBManager</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Constructors</Category>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

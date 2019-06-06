@@ -1,4 +1,4 @@
-package logic;
+package logic.Info;
 
 import java.sql.Date;
 import java.sql.Time;

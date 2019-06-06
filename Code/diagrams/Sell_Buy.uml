@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="1475.0611111111111" y="1050.3678385416665">logic.DBManager</node>
+    <node x="644.8944444444444" y="3013.8678385416665">ui</node>
+    <node x="264.561111111111" y="9.867838541666515">logic.Info</node>
+    <node x="626.8944444444444" y="2898.8678385416665">logic.User</node>
+    <node x="1018.25" y="164.86783854166652">logic.Sell_Buy.OrderItem</node>
+    <node x="511.9166666666666" y="545.8678385416665">logic.Sell_Buy.Order</node>
+    <node x="0.0" y="244.36783854166652">logic.Sell_Buy.Off</node>
+    <node x="548.061111111111" y="1669.8678385416665">logic.Sell_Buy.CustomerSalesman</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="0.40000000000000013" x="1265.0" y="1189.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

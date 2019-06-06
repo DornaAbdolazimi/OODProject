@@ -1,7 +1,7 @@
 package ui;
 
-import logic.Cashier;
-import logic.DBManager;
+import logic.User.Cashier;
+import logic.DBManager.DBManager;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;

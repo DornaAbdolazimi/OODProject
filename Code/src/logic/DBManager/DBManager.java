@@ -1,4 +1,12 @@
-package logic;
+package logic.DBManager;
+
+import logic.Info.Group;
+import logic.Info.Item;
+import logic.Info.Quantity;
+import logic.Sell_Buy.CustomerSalesman;
+import logic.Sell_Buy.Order;
+import logic.Sell_Buy.OrderItem;
+import logic.User.Cashier;
 
 import java.sql.*;
 import java.sql.Date;
@@ -190,13 +198,13 @@ public abstract  class  DBManager {
                     item.setQuantity(myRes.getInt(db_item_quantity));
 
                     ResultSet myRes2 = myState.executeQuery("select * from item_quantity");
-                    item.setQuantities(new ArrayList<Quantity>());
+                    item.setQuantityHistory(new ArrayList<Quantity>());
                     while (myRes2.next()) {
                         if (myRes2.getInt("item_id") == item.getId()){
                             Quantity quantity = new Quantity(myRes2.getDate("start_date"),
                                     myRes2.getTime("start_time"), myRes2.getInt("item_id"), myRes2.getInt("quantity"));
                             quantity.setEndDate(myRes2.getDate("end_date"));
-                            item.getQuantities().add(quantity);
+                            item.getQuantityHistory().add(quantity);
 
                         }
 
@@ -337,7 +345,7 @@ public abstract  class  DBManager {
             pstmt = myCon.prepareStatement(sql3,
                     Statement.RETURN_GENERATED_KEYS);
 
-            Quantity lastQuantity =  item.getQuantities().get(item.getQuantities().size()-1);
+            Quantity lastQuantity =  item.getQuantityHistory().get(item.getQuantityHistory().size()-1);
             pstmt.setDate(1, lastQuantity.getEndDate());
 
 
@@ -443,7 +451,7 @@ public abstract  class  DBManager {
                 }
             }
             if(temp==false){
-                System.out.printf("No logic.Order with this ID.");
+                System.out.printf("No logic.Sell_Buy.Order with this ID.");
                 return;
             }
             temp = false;

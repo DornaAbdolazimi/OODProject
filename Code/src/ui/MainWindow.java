@@ -1,14 +1,10 @@
 package ui;
 
-import logic.Cashier;
-import logic.Group;
-import logic.Item;
+import logic.User.Cashier;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.sql.Connection;
-import java.sql.DriverManager;
 
 /**
  * Made by Peyman on 5/23/2019.
