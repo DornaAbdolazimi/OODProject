@@ -7,9 +7,8 @@
     <node x="313.94791666666663" y="1079.0">logic.Sell_Buy</node>
     <node x="608.5" y="1329.0">ui</node>
     <node x="590.5" y="1214.0">logic.User</node>
-    <node x="-190.0" y="1313.9999999999998">logic.Info.CustomerClub</node>
-    <node x="314.0" y="433.0">logic.Info.Item</node>
     <node x="0.0" y="619.0">logic.Info.FinancialPeriod</node>
+    <node x="314.0" y="433.0">logic.Info.Item</node>
     <node x="775.1666666666666" y="26.0">logic.Info.Group</node>
   </nodes>
   <notes />
@@ -34,16 +33,16 @@
       <point x="131.5" y="165.5" />
     </edge>
     <edge source="logic.Info.Item" target="logic.Info.Quantity">
-      <point x="-239.625" y="-298.0" />
-      <point x="393.875" y="408.0" />
-      <point x="450.99999999999994" y="408.0" />
-      <point x="-121.66666666666669" y="191.5" />
+      <point x="79.875" y="-298.0" />
+      <point x="713.375" y="408.0" />
+      <point x="694.3333333333334" y="408.0" />
+      <point x="121.66666666666674" y="191.5" />
     </edge>
     <edge source="logic.Sell_Buy" target="logic.Info.Item">
-      <point x="95.66666666666669" y="-32.5" />
-      <point x="553.1145833333333" y="1054.0" />
-      <point x="633.5" y="1054.0" />
-      <point x="0.0" y="298.0" />
+      <point x="5.6843418860808015E-14" y="-32.5" />
+      <point x="457.4479166666667" y="1054.0" />
+      <point x="420.5" y="1054.0" />
+      <point x="-213.0" y="298.0" />
     </edge>
     <edge source="logic.User" target="logic.Info.Item">
       <point x="0.0" y="-32.5" />
@@ -76,9 +75,7 @@
     </edge>
   </edges>
   <settings layout="Hierarchic Group" zoom="0.6000000000000001" x="0.0" y="495.0" />
-  <SelectedNodes>
-    <node>logic.Info.CustomerClub</node>
-  </SelectedNodes>
+  <SelectedNodes />
   <Categories>
     <Category>Fields</Category>
     <Category>Properties</Category>

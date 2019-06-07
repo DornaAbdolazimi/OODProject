@@ -3,23 +3,79 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="454.3229166666667" y="154.86783854166652">logic.Sell_Buy</node>
-    <node x="-653.0" y="-479.5">ui</node>
-    <node x="-322.0" y="233.5">logic.User</node>
-    <node x="487.91666666666663" y="9.867838541666515">logic.Info</node>
-    <node x="0.0" y="289.8678385416665">logic.DBManager.DBManager</node>
+    <node x="153.75000000000003" y="164.86783854166674">logic.Sell_Buy</node>
+    <node x="20.0" y="1421.8678385416667">ui</node>
+    <node x="2.0" y="803.3678385416667">logic.User</node>
+    <node x="131.5357142857143" y="9.867838541666742">logic.Info</node>
+    <node x="262.0" y="299.86783854166674">logic.DBManager.DBManager</node>
   </nodes>
   <notes />
-  <edges />
-  <settings layout="Hierarchic Group" zoom="1.0" x="0.0" y="0.0" />
+  <edges>
+    <edge source="ui" target="ui">
+      <point x="0.0" y="32.5" />
+      <point x="122.0" y="1506.8678385416667" />
+      <point x="0.0" y="1506.8678385416667" />
+      <point x="0.0" y="1454.3678385416667" />
+      <point x="-102.0" y="-0.0" />
+    </edge>
+    <edge source="logic.Info" target="logic.Info">
+      <point x="-99.42857142857144" y="32.5" />
+      <point x="148.10714285714286" y="94.86783854166674" />
+      <point x="111.5357142857143" y="94.86783854166674" />
+      <point x="111.5357142857143" y="64.03450520833348" />
+      <point x="-116.0" y="21.666666666666742" />
+    </edge>
+    <edge source="logic.DBManager.DBManager" target="logic.Sell_Buy">
+      <point x="-294.0" y="-536.0" />
+      <point x="556.0" y="279.86783854166674" />
+      <point x="404.875" y="279.86783854166674" />
+      <point x="107.625" y="32.5" />
+    </edge>
+    <edge source="logic.User" target="logic.Sell_Buy">
+      <point x="60.0" y="-32.5" />
+      <point x="182.0" y="279.86783854166674" />
+      <point x="333.125" y="279.86783854166674" />
+      <point x="35.875" y="32.5" />
+    </edge>
+    <edge source="logic.DBManager.DBManager" target="logic.Info">
+      <point x="294.0" y="-536.0" />
+      <point x="1144.0" y="279.86783854166674" />
+      <point x="829.5089285714286" y="279.86783854166674" />
+      <point x="829.5089285714286" y="134.86783854166674" />
+      <point x="346.9642857142857" y="134.86783854166674" />
+      <point x="99.42857142857142" y="32.5" />
+    </edge>
+    <edge source="ui" target="logic.User">
+      <point x="0.0" y="-32.5" />
+      <point x="0.0" y="32.5" />
+    </edge>
+    <edge source="logic.Sell_Buy" target="logic.Sell_Buy">
+      <point x="-107.625" y="32.5" />
+      <point x="189.62500000000003" y="249.86783854166674" />
+      <point x="133.75000000000003" y="249.86783854166674" />
+      <point x="133.75000000000003" y="213.61783854166674" />
+      <point x="-143.5" y="16.25" />
+    </edge>
+    <edge source="logic.User" target="logic.Info">
+      <point x="-60.0" y="-32.5" />
+      <point x="62.0" y="279.86783854166674" />
+      <point x="12.0625" y="279.86783854166674" />
+      <point x="12.0625" y="134.86783854166674" />
+      <point x="247.5357142857143" y="134.86783854166674" />
+      <point x="0.0" y="32.5" />
+    </edge>
+    <edge source="logic.Sell_Buy" target="logic.Info">
+      <point x="-71.75" y="-32.5" />
+      <point x="225.50000000000003" y="144.86783854166674" />
+      <point x="280.67857142857144" y="144.86783854166674" />
+      <point x="33.14285714285714" y="32.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7999999999999997" x="-208.82502056766862" y="143.70149131913865" />
   <SelectedNodes>
     <node>logic.DBManager.DBManager</node>
   </SelectedNodes>
   <Categories>
-    <Category>Fields</Category>
-    <Category>Inner Classes</Category>
-    <Category>Constructors</Category>
-    <Category>Properties</Category>
     <Category>Methods</Category>
   </Categories>
   <SCOPE>All</SCOPE>

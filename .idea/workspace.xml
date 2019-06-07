@@ -49,8 +49,8 @@
       <file leaf-file-name="DBManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Code/src/logic/DBManager/DBManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4047">
-              <caret line="28" column="34" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+            <state relative-caret-position="1242">
+              <caret line="108" column="0" lean-forward="true" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
               <folding>
                 <marker date="1559843786042" expanded="true" signature="2694:2708" ph="select * fro... customer_salesman" />
                 <marker date="1559843786042" expanded="true" signature="3305:3319" ph="select * fro... customer" />
@@ -84,367 +84,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Cashier.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Code/src/logic/User/Cashier.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Off.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Code/src/logic/Sell_Buy/Off.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="13" column="48" lean-forward="false" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#260#266#0" expanded="true" />
-                <element signature="e#319#320#0" expanded="true" />
-                <element signature="e#357#358#0" expanded="true" />
-                <element signature="e#428#429#0" expanded="true" />
-                <element signature="e#482#483#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Quantity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Code/src/logic/Info/Quantity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1564">
-              <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Info.uml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Code/diagrams/Info.uml">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>JAVA</ID>
-              <OriginalElement />
-              <nodes>
-                <node x="390.16666666666663" y="0.0">logic.Info.Quantity</node>
-                <node x="313.94791666666663" y="1079.0">logic.Sell_Buy</node>
-                <node x="608.5" y="1329.0">ui</node>
-                <node x="590.5" y="1214.0">logic.User</node>
-                <node x="-190.0" y="1313.9999999999998">logic.Info.CustomerClub</node>
-                <node x="314.0" y="433.0">logic.Info.Item</node>
-                <node x="0.0" y="619.0">logic.Info.FinancialPeriod</node>
-                <node x="775.1666666666666" y="26.0">logic.Info.Group</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="logic.Sell_Buy" target="logic.Info.FinancialPeriod">
-                  <point x="-95.66666666666663" y="-32.5" />
-                  <point x="361.78125" y="1054.0" />
-                  <point x="147.0" y="1054.0" />
-                  <point x="0.0" y="112.0" />
-                </edge>
-                <edge source="ui" target="ui">
-                  <point x="0.0" y="32.5" />
-                  <point x="710.5" y="1414.0" />
-                  <point x="588.5" y="1414.0" />
-                  <point x="588.5" y="1361.5" />
-                  <point x="-102.0" y="-0.0" />
-                </edge>
-                <edge source="logic.User" target="logic.Info.Group">
-                  <point x="80.0" y="-32.5" />
-                  <point x="790.5" y="1194.0" />
-                  <point x="1169.6666666666665" y="1194.0" />
-                  <point x="131.5" y="165.5" />
-                </edge>
-                <edge source="logic.Info.Item" target="logic.Info.Quantity">
-                  <point x="-239.625" y="-298.0" />
-                  <point x="393.875" y="408.0" />
-                  <point x="450.99999999999994" y="408.0" />
-                  <point x="-121.66666666666669" y="191.5" />
-                </edge>
-                <edge source="logic.Sell_Buy" target="logic.Info.Item">
-                  <point x="95.66666666666669" y="-32.5" />
-                  <point x="553.1145833333333" y="1054.0" />
-                  <point x="633.5" y="1054.0" />
-                  <point x="0.0" y="298.0" />
-                </edge>
-                <edge source="logic.User" target="logic.Info.Item">
-                  <point x="0.0" y="-32.5" />
-                  <point x="710.5" y="1054.0" />
-                  <point x="846.5" y="1054.0" />
-                  <point x="213.0" y="298.0" />
-                </edge>
-                <edge source="logic.User" target="logic.Sell_Buy">
-                  <point x="-80.0" y="-32.5" />
-                  <point x="630.5" y="1194.0" />
-                  <point x="553.1145833333333" y="1194.0" />
-                  <point x="95.66666666666669" y="32.5" />
-                </edge>
-                <edge source="ui" target="logic.User">
-                  <point x="0.0" y="-32.5" />
-                  <point x="0.0" y="32.5" />
-                </edge>
-                <edge source="logic.Sell_Buy" target="logic.Sell_Buy">
-                  <point x="-95.66666666666669" y="32.5" />
-                  <point x="361.78124999999994" y="1164.0" />
-                  <point x="293.94791666666663" y="1164.0" />
-                  <point x="293.94791666666663" y="1127.75" />
-                  <point x="-143.5" y="16.25" />
-                </edge>
-                <edge source="logic.Info.Item" target="logic.Info.Group">
-                  <point x="239.625" y="-298.0" />
-                  <point x="873.125" y="408.0" />
-                  <point x="906.6666666666666" y="408.0" />
-                  <point x="-131.5" y="165.5" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="0.6000000000000001" x="-1663.333333333333" y="-220.83333333333331" />
-              <SelectedNodes>
-                <node>logic.Info.CustomerClub</node>
-              </SelectedNodes>
-              <Categories>
-                <Category>Fields</Category>
-                <Category>Properties</Category>
-                <Category>Methods</Category>
-              </Categories>
-              <SCOPE>All</SCOPE>
-              <VISIBILITY>private</VISIBILITY>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Sell_Buy.uml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Code/diagrams/Sell_Buy.uml">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>JAVA</ID>
-              <OriginalElement />
-              <nodes>
-                <node x="1475.0611111111111" y="1050.3678385416665">logic.DBManager</node>
-                <node x="644.8944444444444" y="3013.8678385416665">ui</node>
-                <node x="264.56111111111113" y="9.867838541666515">logic.Info</node>
-                <node x="626.8944444444444" y="2898.8678385416665">logic.User</node>
-                <node x="1018.25" y="164.86783854166652">logic.Sell_Buy.OrderItem</node>
-                <node x="511.9166666666668" y="545.8678385416665">logic.Sell_Buy.Order</node>
-                <node x="0.0" y="244.36783854166652">logic.Sell_Buy.Off</node>
-                <node x="548.0611111111111" y="1669.8678385416665">logic.Sell_Buy.CustomerSalesman</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="logic.Info" target="logic.Info">
-                  <point x="-72.5" y="32.5" />
-                  <point x="308.06111111111113" y="104.86783854166652" />
-                  <point x="234.56111111111113" y="104.86783854166652" />
-                  <point x="234.56111111111113" y="42.367838541666515" />
-                  <point x="-116.0" y="-0.0" />
-                </edge>
-                <edge source="ui" target="ui">
-                  <point x="0.0" y="32.5" />
-                  <point x="746.8944444444444" y="3098.8678385416665" />
-                  <point x="624.8944444444444" y="3098.8678385416665" />
-                  <point x="624.8944444444444" y="3046.3678385416665" />
-                  <point x="-102.0" y="-0.0" />
-                </edge>
-                <edge source="logic.Sell_Buy.Order" target="logic.Sell_Buy.OrderItem">
-                  <point x="170.0" y="-537.0" />
-                  <point x="1021.9166666666667" y="525.8678385416665" />
-                  <point x="1131.125" y="525.8678385416665" />
-                  <point x="-37.625" y="165.5" />
-                </edge>
-                <edge source="logic.DBManager" target="logic.Info">
-                  <point x="84.0" y="-32.5" />
-                  <point x="1727.0611111111111" y="134.86783854166652" />
-                  <point x="482.06111111111113" y="134.86783854166652" />
-                  <point x="101.5" y="32.5" />
-                </edge>
-                <edge source="logic.Sell_Buy.CustomerSalesman" target="logic.Sell_Buy.Order">
-                  <point x="226.5000000000001" y="-589.5" />
-                  <point x="1227.5611111111111" y="1644.8678385416665" />
-                  <point x="1078.5833333333333" y="1644.8678385416665" />
-                  <point x="226.66666666666652" y="537.0" />
-                </edge>
-                <edge source="logic.User" target="logic.Info">
-                  <point x="-90.0" y="-32.5" />
-                  <point x="656.8944444444444" y="2878.8678385416665" />
-                  <point x="439.5" y="2878.8678385416665" />
-                  <point x="439.5" y="144.86783854166652" />
-                  <point x="424.06111111111113" y="144.86783854166652" />
-                  <point x="43.5" y="32.5" />
-                </edge>
-                <edge source="ui" target="logic.User">
-                  <point x="0.0" y="-32.5" />
-                  <point x="0.0" y="32.5" />
-                </edge>
-                <edge source="logic.DBManager" target="logic.Sell_Buy.OrderItem">
-                  <point x="-84.0" y="-32.5" />
-                  <point x="1559.0611111111111" y="515.8678385416665" />
-                  <point x="1281.625" y="515.8678385416665" />
-                  <point x="112.875" y="165.5" />
-                </edge>
-                <edge source="logic.User" target="logic.Sell_Buy.CustomerSalesman">
-                  <point x="30.0" y="-32.5" />
-                  <point x="776.8944444444444" y="2868.8678385416665" />
-                  <point x="1001.0611111111111" y="2868.8678385416665" />
-                  <point x="0.0" y="589.5" />
-                </edge>
-                <edge source="logic.User" target="logic.Sell_Buy.OrderItem">
-                  <point x="90.0" y="-32.5" />
-                  <point x="836.8944444444444" y="2878.8678385416665" />
-                  <point x="1464.5611111111111" y="2878.8678385416665" />
-                  <point x="1464.5611111111111" y="525.8678385416665" />
-                  <point x="1206.375" y="525.8678385416665" />
-                  <point x="37.625" y="165.5" />
-                </edge>
-                <edge source="logic.Sell_Buy.Off" target="logic.Info">
-                  <point x="107.25" y="-86.0" />
-                  <point x="321.75" y="144.86783854166652" />
-                  <point x="395.06111111111113" y="144.86783854166652" />
-                  <point x="14.5" y="32.5" />
-                </edge>
-                <edge source="logic.User" target="logic.Sell_Buy.Order">
-                  <point x="-30.0" y="-32.5" />
-                  <point x="716.8944444444444" y="2868.8678385416665" />
-                  <point x="486.31111111111113" y="2868.8678385416665" />
-                  <point x="486.31111111111113" y="1644.8678385416665" />
-                  <point x="625.2500000000002" y="1644.8678385416665" />
-                  <point x="-226.66666666666663" y="537.0" />
-                </edge>
-                <edge source="logic.Sell_Buy.OrderItem" target="logic.Info">
-                  <point x="0.0" y="-165.5" />
-                  <point x="1168.75" y="144.86783854166652" />
-                  <point x="453.06111111111113" y="144.86783854166652" />
-                  <point x="72.5" y="32.5" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="0.30000000000000016" x="1264.9999999999995" y="874.9999999999993" />
-              <SelectedNodes />
-              <Categories>
-                <Category>Fields</Category>
-                <Category>Properties</Category>
-                <Category>Methods</Category>
-              </Categories>
-              <SCOPE>All</SCOPE>
-              <VISIBILITY>private</VISIBILITY>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User_class.uml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Code/diagrams/User_class.uml">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>JAVA</ID>
-              <OriginalElement />
-              <nodes>
-                <node x="740.0" y="831.3678385416667">logic.DBManager</node>
-                <node x="466.75" y="164.86783854166674">logic.Sell_Buy</node>
-                <node x="258.0" y="1477.8678385416667">ui</node>
-                <node x="444.53571428571433" y="9.867838541666742">logic.Info</node>
-                <node x="0.0" y="299.86783854166674">logic.User.Cashier</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="logic.Info" target="logic.Info">
-                  <point x="-99.42857142857144" y="32.5" />
-                  <point x="461.1071428571429" y="94.86783854166674" />
-                  <point x="424.53571428571433" y="94.86783854166674" />
-                  <point x="424.53571428571433" y="64.03450520833348" />
-                  <point x="-116.0" y="21.666666666666742" />
-                </edge>
-                <edge source="ui" target="ui">
-                  <point x="0.0" y="32.5" />
-                  <point x="360.0" y="1562.8678385416667" />
-                  <point x="238.0" y="1562.8678385416667" />
-                  <point x="238.0" y="1510.3678385416667" />
-                  <point x="-102.0" y="-0.0" />
-                </edge>
-                <edge source="logic.User.Cashier" target="logic.Sell_Buy">
-                  <point x="180.0" y="-564.0" />
-                  <point x="540.0" y="279.86783854166674" />
-                  <point x="646.125" y="279.86783854166674" />
-                  <point x="35.875" y="32.5" />
-                </edge>
-                <edge source="logic.User.Cashier" target="logic.Info">
-                  <point x="-180.0" y="-564.0" />
-                  <point x="180.0" y="279.86783854166674" />
-                  <point x="253.52678571428578" y="279.86783854166674" />
-                  <point x="253.52678571428578" y="134.86783854166674" />
-                  <point x="560.5357142857143" y="134.86783854166674" />
-                  <point x="0.0" y="32.5" />
-                </edge>
-                <edge source="logic.DBManager" target="logic.Info">
-                  <point x="84.0" y="-32.5" />
-                  <point x="992.0" y="279.86783854166674" />
-                  <point x="934.6517857142858" y="279.86783854166674" />
-                  <point x="934.6517857142858" y="134.86783854166674" />
-                  <point x="659.9642857142857" y="134.86783854166674" />
-                  <point x="99.42857142857139" y="32.5" />
-                </edge>
-                <edge source="logic.Sell_Buy" target="logic.Sell_Buy">
-                  <point x="-107.625" y="32.5" />
-                  <point x="502.625" y="249.86783854166674" />
-                  <point x="446.75" y="249.86783854166674" />
-                  <point x="446.75" y="213.61783854166674" />
-                  <point x="-143.5" y="16.25" />
-                </edge>
-                <edge source="logic.DBManager" target="logic.Sell_Buy">
-                  <point x="-84.0" y="-32.5" />
-                  <point x="824.0" y="279.86783854166674" />
-                  <point x="717.875" y="279.86783854166674" />
-                  <point x="107.625" y="32.5" />
-                </edge>
-                <edge source="ui" target="logic.User.Cashier">
-                  <point x="0.0" y="-32.5" />
-                  <point x="0.0" y="564.0" />
-                </edge>
-                <edge source="logic.Sell_Buy" target="logic.Info">
-                  <point x="-71.75" y="-32.5" />
-                  <point x="538.5" y="144.86783854166674" />
-                  <point x="593.6785714285714" y="144.86783854166674" />
-                  <point x="33.14285714285717" y="32.5" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="0.8" x="-854.5" y="280.125" />
-              <SelectedNodes />
-              <Categories>
-                <Category>Fields</Category>
-                <Category>Inner Classes</Category>
-                <Category>Constructors</Category>
-                <Category>Properties</Category>
-                <Category>Methods</Category>
-              </Categories>
-              <SCOPE>All</SCOPE>
-              <VISIBILITY>private</VISIBILITY>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Item.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Item.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Code/src/logic/Info/Item.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="604">
-              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="92">
+              <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
               <folding>
-                <element signature="e#326#327#0" expanded="true" />
-                <element signature="e#354#355#0" expanded="true" />
-                <element signature="e#398#399#0" expanded="true" />
-                <element signature="e#432#433#0" expanded="true" />
-                <element signature="e#523#533#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Group.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Code/src/logic/Info/Group.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -470,6 +117,8 @@
       <find>quan</find>
       <find>history</find>
       <find>grou</find>
+      <find>year</find>
+      <find>db</find>
     </findStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -491,6 +140,7 @@
         <option value="$PROJECT_DIR$/Code/src/logic/Sell_Buy/Off.java" />
         <option value="$PROJECT_DIR$/Code/src/logic/Info/Item.java" />
         <option value="$PROJECT_DIR$/Code/src/logic/DBManager/DBManager.java" />
+        <option value="$PROJECT_DIR$/Code/src/ui/MainWindow.java" />
       </list>
     </option>
   </component>
@@ -521,9 +171,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -567,50 +214,6 @@
               <option name="myItemId" value="logic" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="User" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OODProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Code" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="logic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OODProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Code" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="logic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Info" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -650,6 +253,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1169,47 +775,48 @@
       <workItem from="1559822860351" duration="5134000" />
       <workItem from="1559828592855" duration="243000" />
       <workItem from="1559833306709" duration="2070000" />
-      <workItem from="1559839408452" duration="5290000" />
+      <workItem from="1559839408452" duration="5973000" />
+      <workItem from="1559873859640" duration="3914000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19649000" />
+    <option name="totallyTimeSpent" value="24246000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3232" height="1732" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958537" sideWeight="0.50258565" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917532" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917532" sideWeight="0.49741435" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20451613" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15129033" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="ANTLR Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3998614" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917532" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32917532" sideWeight="0.49741435" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20129032" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917532" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3998614" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917532" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1224,7 +831,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15129033" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15129033" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="ANTLR Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1239,7 +846,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917532" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917532" sideWeight="0.49741435" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20129032" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20451613" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917532" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -1260,50 +867,37 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Code/src/ui/LoginWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3036">
-          <caret line="66" column="0" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Code/src/ui/MainWindow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5934">
           <caret line="129" column="28" lean-forward="false" selection-start-line="129" selection-start-column="28" selection-end-line="129" selection-end-column="28" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#6904#6905#0" expanded="false" />
-            <element signature="e#6986#6987#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/d7d0386e/500984a0-f4c9-459d-9e43-2d26b248c489/ooddb.item">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/d7d0386e/500984a0-f4c9-459d-9e43-2d26b248c489/ooddb.customer">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1321,9 +915,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1339,58 +931,55 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/d7d0386e/500984a0-f4c9-459d-9e43-2d26b248c489/ooddb.cashier">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/d7d0386e/500984a0-f4c9-459d-9e43-2d26b248c489/ooddb.item">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/d7d0386e/500984a0-f4c9-459d-9e43-2d26b248c489/ooddb.item_group">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/d7d0386e/500984a0-f4c9-459d-9e43-2d26b248c489/ooddb.group_rel">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1488,14 +1077,14 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbview:/d7d0386e/500984a0-f4c9-459d-9e43-2d26b248c489/information_schema.SESSION_STATUS">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1514,188 +1103,139 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/d7d0386e/500984a0-f4c9-459d-9e43-2d26b248c489/ooddb.customer">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/d7d0386e/500984a0-f4c9-459d-9e43-2d26b248c489/ooddb.group_rel">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/d7d0386e/500984a0-f4c9-459d-9e43-2d26b248c489/ooddb.item_group">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/d7d0386e/500984a0-f4c9-459d-9e43-2d26b248c489/ooddb.cashier">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
     </entry>
+    <entry file="dbDummy://dbtable:/d7d0386e/500984a0-f4c9-459d-9e43-2d26b248c489/ooddb.item">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/src/logic/Storeroom.java" />
+    <entry file="file://$PROJECT_DIR$/Code/src/logic/class_diagram.uml" />
+    <entry file="file://$PROJECT_DIR$/Code/src/logic/Date.java" />
+    <entry file="file://$PROJECT_DIR$/Code/src/logic/OffItems.java" />
+    <entry file="file://$PROJECT_DIR$/Diagrams/class_diagram.uml" />
+    <entry file="file://$PROJECT_DIR$/Code/diagrams/User_class_diagram.uml" />
     <entry file="file://$PROJECT_DIR$/Code/src/ui/LoginWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2806">
-          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+        <state relative-caret-position="276">
+          <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Code/src/ui/MainWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5566">
-          <caret line="125" column="28" lean-forward="false" selection-start-line="125" selection-start-column="28" selection-end-line="125" selection-end-column="28" />
+        <state relative-caret-position="92">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#6904#6905#0" expanded="false" />
-            <element signature="e#6986#6987#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/d7d0386e/500984a0-f4c9-459d-9e43-2d26b248c489/ooddb.item">
-      <provider editor-type-id="text-editor">
+    <entry file="file://$PROJECT_DIR$/Code/src/ui/UserMaker.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/src/logic/Storeroom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/src/logic/class_diagram.uml">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement />
-          <nodes />
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.4" x="-59.51785714285734" y="102.38095238095235" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/src/logic/Date.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/src/logic/OffItems.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Diagrams/class_diagram.uml">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement />
-          <nodes />
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="0.0" y="0.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/src/logic/Sell_Buy/CustomerSalesman.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/src/logic/Info/FinancialPeriod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
           <folding>
-            <element signature="e#171#172#0" expanded="true" />
-            <element signature="e#198#199#0" expanded="true" />
-            <element signature="e#238#239#0" expanded="true" />
-            <element signature="e#270#271#0" expanded="true" />
-            <element signature="e#304#305#0" expanded="true" />
-            <element signature="e#336#337#0" expanded="true" />
-            <element signature="e#384#385#0" expanded="true" />
-            <element signature="e#426#427#0" expanded="true" />
-            <element signature="e#458#459#0" expanded="true" />
-            <element signature="e#488#489#0" expanded="true" />
-            <element signature="e#532#533#0" expanded="true" />
-            <element signature="e#570#571#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/src/logic/User/Cashier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Code/src/logic/Sell_Buy/OrderItem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
+        <state relative-caret-position="322">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="e#441#442#0" expanded="true" />
-            <element signature="e#471#472#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Code/src/logic/Sell_Buy/Order.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="966">
-          <caret line="22" column="72" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="72" />
+        <state relative-caret-position="138">
+          <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/src/logic/Sell_Buy/Off.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/src/logic/Sell_Buy/CustomerSalesman.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1711,78 +1251,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Code/src/logic/Sell_Buy/Off.java">
+    <entry file="file://$PROJECT_DIR$/Code/src/logic/Info/FinancialPeriod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="13" column="48" lean-forward="false" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
+        <state relative-caret-position="414">
+          <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/src/logic/Info/Quantity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="5" column="10" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#260#266#0" expanded="true" />
-            <element signature="e#319#320#0" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#428#429#0" expanded="true" />
-            <element signature="e#482#483#0" expanded="true" />
+            <element signature="e#890#891#0" expanded="true" />
+            <element signature="e#921#922#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Code/src/logic/Info/Group.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="1242">
+          <caret line="69" column="0" lean-forward="true" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/src/logic/Info/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="e#326#327#0" expanded="true" />
-            <element signature="e#354#355#0" expanded="true" />
-            <element signature="e#398#399#0" expanded="true" />
-            <element signature="e#432#433#0" expanded="true" />
-            <element signature="e#523#533#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/diagrams/User_class_diagram.uml">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement />
-          <nodes>
-            <node x="" y="">logic.User.Cashier</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.6999999999999997" x="-2984.0" y="-958.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/src/logic/User/Cashier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Code/src/logic/DBManager/DBManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4047">
-          <caret line="28" column="34" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+        <state relative-caret-position="1242">
+          <caret line="108" column="0" lean-forward="true" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
           <folding>
             <marker date="1559843786042" expanded="true" signature="2694:2708" ph="select * fro... customer_salesman" />
             <marker date="1559843786042" expanded="true" signature="3305:3319" ph="select * fro... customer" />
@@ -1815,61 +1315,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Code/diagrams/DBManager.uml">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement />
-          <nodes>
-            <node x="" y="">logic.Sell_Buy</node>
-            <node x="" y="">ui</node>
-            <node x="" y="">logic.User</node>
-            <node x="" y="">logic.Info</node>
-            <node x="" y="">logic.DBManager.DBManager</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.5000000000000001" x="1107.0" y="2306.5" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Inner Classes</Category>
-            <Category>Constructors</Category>
-            <Category>Properties</Category>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/src/logic/Info/Quantity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1564">
-          <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Code/diagrams/Info.uml">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
           <ID>JAVA</ID>
           <OriginalElement />
           <nodes>
-            <node x="390.16666666666663" y="0.0">logic.Info.Quantity</node>
-            <node x="313.94791666666663" y="1079.0">logic.Sell_Buy</node>
+            <node x="390.1666666666667" y="0.0">logic.Info.Quantity</node>
+            <node x="313.9479166666667" y="1079.0">logic.Sell_Buy</node>
             <node x="608.5" y="1329.0">ui</node>
             <node x="590.5" y="1214.0">logic.User</node>
-            <node x="-190.0" y="1313.9999999999998">logic.Info.CustomerClub</node>
-            <node x="314.0" y="433.0">logic.Info.Item</node>
             <node x="0.0" y="619.0">logic.Info.FinancialPeriod</node>
-            <node x="775.1666666666666" y="26.0">logic.Info.Group</node>
+            <node x="314.0" y="433.0">logic.Info.Item</node>
+            <node x="775.1666666666667" y="26.0">logic.Info.Group</node>
           </nodes>
           <notes />
           <edges>
             <edge source="logic.Sell_Buy" target="logic.Info.FinancialPeriod">
-              <point x="-95.66666666666663" y="-32.5" />
+              <point x="-95.66666666666669" y="-32.5" />
               <point x="361.78125" y="1054.0" />
               <point x="147.0" y="1054.0" />
               <point x="0.0" y="112.0" />
@@ -1884,20 +1347,20 @@
             <edge source="logic.User" target="logic.Info.Group">
               <point x="80.0" y="-32.5" />
               <point x="790.5" y="1194.0" />
-              <point x="1169.6666666666665" y="1194.0" />
+              <point x="1169.6666666666667" y="1194.0" />
               <point x="131.5" y="165.5" />
             </edge>
             <edge source="logic.Info.Item" target="logic.Info.Quantity">
-              <point x="-239.625" y="-298.0" />
-              <point x="393.875" y="408.0" />
-              <point x="450.99999999999994" y="408.0" />
-              <point x="-121.66666666666669" y="191.5" />
+              <point x="79.875" y="-298.0" />
+              <point x="713.375" y="408.0" />
+              <point x="694.3333333333333" y="408.0" />
+              <point x="121.66666666666663" y="191.5" />
             </edge>
             <edge source="logic.Sell_Buy" target="logic.Info.Item">
-              <point x="95.66666666666669" y="-32.5" />
-              <point x="553.1145833333333" y="1054.0" />
-              <point x="633.5" y="1054.0" />
-              <point x="0.0" y="298.0" />
+              <point x="0.0" y="-32.5" />
+              <point x="457.4479166666667" y="1054.0" />
+              <point x="420.5" y="1054.0" />
+              <point x="-213.0" y="298.0" />
             </edge>
             <edge source="logic.User" target="logic.Info.Item">
               <point x="0.0" y="-32.5" />
@@ -1909,7 +1372,7 @@
               <point x="-80.0" y="-32.5" />
               <point x="630.5" y="1194.0" />
               <point x="553.1145833333333" y="1194.0" />
-              <point x="95.66666666666669" y="32.5" />
+              <point x="95.66666666666663" y="32.5" />
             </edge>
             <edge source="ui" target="logic.User">
               <point x="0.0" y="-32.5" />
@@ -1917,22 +1380,20 @@
             </edge>
             <edge source="logic.Sell_Buy" target="logic.Sell_Buy">
               <point x="-95.66666666666669" y="32.5" />
-              <point x="361.78124999999994" y="1164.0" />
-              <point x="293.94791666666663" y="1164.0" />
-              <point x="293.94791666666663" y="1127.75" />
+              <point x="361.78125" y="1164.0" />
+              <point x="293.9479166666667" y="1164.0" />
+              <point x="293.9479166666667" y="1127.75" />
               <point x="-143.5" y="16.25" />
             </edge>
             <edge source="logic.Info.Item" target="logic.Info.Group">
               <point x="239.625" y="-298.0" />
               <point x="873.125" y="408.0" />
-              <point x="906.6666666666666" y="408.0" />
+              <point x="906.6666666666667" y="408.0" />
               <point x="-131.5" y="165.5" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.6000000000000001" x="-1663.333333333333" y="-220.83333333333331" />
-          <SelectedNodes>
-            <node>logic.Info.CustomerClub</node>
-          </SelectedNodes>
+          <settings layout="Hierarchic Group" zoom="0.6000000000000001" x="-1647.0" y="-220.00000000000006" />
+          <SelectedNodes />
           <Categories>
             <Category>Fields</Category>
             <Category>Properties</Category>
@@ -2017,7 +1478,7 @@
               <point x="33.14285714285717" y="32.5" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.8" x="-854.5" y="280.125" />
+          <settings layout="Hierarchic Group" zoom="0.8" x="-848.25" y="280.125" />
           <SelectedNodes />
           <Categories>
             <Category>Fields</Category>
@@ -2048,13 +1509,6 @@
           </nodes>
           <notes />
           <edges>
-            <edge source="logic.Info" target="logic.Info">
-              <point x="-72.5" y="32.5" />
-              <point x="308.06111111111113" y="104.86783854166652" />
-              <point x="234.56111111111113" y="104.86783854166652" />
-              <point x="234.56111111111113" y="42.367838541666515" />
-              <point x="-116.0" y="-0.0" />
-            </edge>
             <edge source="ui" target="ui">
               <point x="0.0" y="32.5" />
               <point x="746.8944444444444" y="3098.8678385416665" />
@@ -2062,17 +1516,24 @@
               <point x="624.8944444444444" y="3046.3678385416665" />
               <point x="-102.0" y="-0.0" />
             </edge>
-            <edge source="logic.Sell_Buy.Order" target="logic.Sell_Buy.OrderItem">
-              <point x="170.0" y="-537.0" />
-              <point x="1021.9166666666667" y="525.8678385416665" />
-              <point x="1131.125" y="525.8678385416665" />
-              <point x="-37.625" y="165.5" />
+            <edge source="logic.Info" target="logic.Info">
+              <point x="-72.5" y="32.5" />
+              <point x="308.06111111111113" y="104.86783854166652" />
+              <point x="234.56111111111113" y="104.86783854166652" />
+              <point x="234.56111111111113" y="42.367838541666515" />
+              <point x="-116.0" y="-0.0" />
             </edge>
             <edge source="logic.DBManager" target="logic.Info">
               <point x="84.0" y="-32.5" />
               <point x="1727.0611111111111" y="134.86783854166652" />
               <point x="482.06111111111113" y="134.86783854166652" />
               <point x="101.5" y="32.5" />
+            </edge>
+            <edge source="logic.Sell_Buy.Order" target="logic.Sell_Buy.OrderItem">
+              <point x="170.0" y="-537.0" />
+              <point x="1021.9166666666667" y="525.8678385416665" />
+              <point x="1131.125" y="525.8678385416665" />
+              <point x="-37.625" y="165.5" />
             </edge>
             <edge source="logic.Sell_Buy.CustomerSalesman" target="logic.Sell_Buy.Order">
               <point x="226.5000000000001" y="-589.5" />
@@ -2133,7 +1594,7 @@
               <point x="72.5" y="32.5" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.30000000000000016" x="1264.9999999999995" y="874.9999999999993" />
+          <settings layout="Hierarchic Group" zoom="0.42793224672419305" x="-1414.4607916355485" y="550.8364451082897" />
           <SelectedNodes />
           <Categories>
             <Category>Fields</Category>
@@ -2142,6 +1603,40 @@
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/diagrams/DBManager.uml">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="" y="">logic.Sell_Buy</node>
+            <node x="" y="">ui</node>
+            <node x="" y="">logic.User</node>
+            <node x="" y="">logic.Info</node>
+            <node x="" y="">logic.DBManager.DBManager</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.7999999999999997" x="-208.82502056766862" y="143.70149131913865" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/src/logic/Info/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

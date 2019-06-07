@@ -12,7 +12,13 @@
   <notes />
   <edges />
   <settings layout="Hierarchic Group" zoom="0.8" x="393.0" y="817.0" />
-  <SelectedNodes />
+  <SelectedNodes>
+    <node>logic.DBManager</node>
+    <node>logic.Sell_Buy</node>
+    <node>ui</node>
+    <node>logic.Info</node>
+    <node>logic.User.Cashier</node>
+  </SelectedNodes>
   <Categories>
     <Category>Fields</Category>
     <Category>Inner Classes</Category>

@@ -5,16 +5,101 @@
   <nodes>
     <node x="1475.0611111111111" y="1050.3678385416665">logic.DBManager</node>
     <node x="644.8944444444444" y="3013.8678385416665">ui</node>
-    <node x="264.561111111111" y="9.867838541666515">logic.Info</node>
+    <node x="264.56111111111113" y="9.867838541666515">logic.Info</node>
     <node x="626.8944444444444" y="2898.8678385416665">logic.User</node>
     <node x="1018.25" y="164.86783854166652">logic.Sell_Buy.OrderItem</node>
-    <node x="511.9166666666666" y="545.8678385416665">logic.Sell_Buy.Order</node>
+    <node x="511.9166666666668" y="545.8678385416665">logic.Sell_Buy.Order</node>
     <node x="0.0" y="244.36783854166652">logic.Sell_Buy.Off</node>
-    <node x="548.061111111111" y="1669.8678385416665">logic.Sell_Buy.CustomerSalesman</node>
+    <node x="548.0611111111111" y="1669.8678385416665">logic.Sell_Buy.CustomerSalesman</node>
   </nodes>
   <notes />
-  <edges />
-  <settings layout="Hierarchic Group" zoom="0.40000000000000013" x="1265.0" y="1189.0" />
+  <edges>
+    <edge source="ui" target="ui">
+      <point x="0.0" y="32.5" />
+      <point x="746.8944444444444" y="3098.8678385416665" />
+      <point x="624.8944444444444" y="3098.8678385416665" />
+      <point x="624.8944444444444" y="3046.3678385416665" />
+      <point x="-102.0" y="-0.0" />
+    </edge>
+    <edge source="logic.Info" target="logic.Info">
+      <point x="-72.5" y="32.5" />
+      <point x="308.06111111111113" y="104.86783854166652" />
+      <point x="234.56111111111113" y="104.86783854166652" />
+      <point x="234.56111111111113" y="42.367838541666515" />
+      <point x="-116.0" y="-0.0" />
+    </edge>
+    <edge source="logic.DBManager" target="logic.Info">
+      <point x="84.0" y="-32.5" />
+      <point x="1727.0611111111111" y="134.86783854166652" />
+      <point x="482.06111111111113" y="134.86783854166652" />
+      <point x="101.5" y="32.5" />
+    </edge>
+    <edge source="logic.Sell_Buy.Order" target="logic.Sell_Buy.OrderItem">
+      <point x="170.0" y="-537.0" />
+      <point x="1021.9166666666667" y="525.8678385416665" />
+      <point x="1131.125" y="525.8678385416665" />
+      <point x="-37.625" y="165.5" />
+    </edge>
+    <edge source="logic.Sell_Buy.CustomerSalesman" target="logic.Sell_Buy.Order">
+      <point x="226.5000000000001" y="-589.5" />
+      <point x="1227.5611111111111" y="1644.8678385416665" />
+      <point x="1078.5833333333333" y="1644.8678385416665" />
+      <point x="226.66666666666652" y="537.0" />
+    </edge>
+    <edge source="logic.User" target="logic.Info">
+      <point x="-90.0" y="-32.5" />
+      <point x="656.8944444444444" y="2878.8678385416665" />
+      <point x="439.5" y="2878.8678385416665" />
+      <point x="439.5" y="144.86783854166652" />
+      <point x="424.06111111111113" y="144.86783854166652" />
+      <point x="43.5" y="32.5" />
+    </edge>
+    <edge source="ui" target="logic.User">
+      <point x="0.0" y="-32.5" />
+      <point x="0.0" y="32.5" />
+    </edge>
+    <edge source="logic.DBManager" target="logic.Sell_Buy.OrderItem">
+      <point x="-84.0" y="-32.5" />
+      <point x="1559.0611111111111" y="515.8678385416665" />
+      <point x="1281.625" y="515.8678385416665" />
+      <point x="112.875" y="165.5" />
+    </edge>
+    <edge source="logic.User" target="logic.Sell_Buy.CustomerSalesman">
+      <point x="30.0" y="-32.5" />
+      <point x="776.8944444444444" y="2868.8678385416665" />
+      <point x="1001.0611111111111" y="2868.8678385416665" />
+      <point x="0.0" y="589.5" />
+    </edge>
+    <edge source="logic.User" target="logic.Sell_Buy.OrderItem">
+      <point x="90.0" y="-32.5" />
+      <point x="836.8944444444444" y="2878.8678385416665" />
+      <point x="1464.5611111111111" y="2878.8678385416665" />
+      <point x="1464.5611111111111" y="525.8678385416665" />
+      <point x="1206.375" y="525.8678385416665" />
+      <point x="37.625" y="165.5" />
+    </edge>
+    <edge source="logic.Sell_Buy.Off" target="logic.Info">
+      <point x="107.25" y="-86.0" />
+      <point x="321.75" y="144.86783854166652" />
+      <point x="395.06111111111113" y="144.86783854166652" />
+      <point x="14.5" y="32.5" />
+    </edge>
+    <edge source="logic.User" target="logic.Sell_Buy.Order">
+      <point x="-30.0" y="-32.5" />
+      <point x="716.8944444444444" y="2868.8678385416665" />
+      <point x="486.31111111111113" y="2868.8678385416665" />
+      <point x="486.31111111111113" y="1644.8678385416665" />
+      <point x="625.2500000000002" y="1644.8678385416665" />
+      <point x="-226.66666666666663" y="537.0" />
+    </edge>
+    <edge source="logic.Sell_Buy.OrderItem" target="logic.Info">
+      <point x="0.0" y="-165.5" />
+      <point x="1168.75" y="144.86783854166652" />
+      <point x="453.06111111111113" y="144.86783854166652" />
+      <point x="72.5" y="32.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.42793224672419305" x="906.0" y="1554.5" />
   <SelectedNodes />
   <Categories>
     <Category>Fields</Category>
