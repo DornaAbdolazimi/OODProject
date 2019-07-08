@@ -1,7 +1,13 @@
 package ui;
 
+<<<<<<< HEAD
+import logic.Cashier;
+import logic.CashierDBManager;
+import logic.DBManager;
+=======
 import logic.User.Cashier;
 import logic.DBManager.DBManager;
+>>>>>>> 25ba95dad4c753f236ae7452cecce45a6e7d9cf9
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -26,10 +32,10 @@ public class LoginWindow {
                     Login.setVisible(false);
                     loginWindow.setVisible(false);
                     boolean isMan = isManager(textFieldUsername.getText(), passwordField.getPassword());
-                    MainWindow mainWindow = new MainWindow(new Cashier(DBManager.getNewCashierID())); //TODO !!!!!!!!!!1
+                    MainWindow mainWindow = new MainWindow(new Cashier(CashierDBManager.getNewCashierID())); //TODO !!!!!!!!!!1
                     mainWindow.start();
                     if (isMan){
-                        UserMaker userMaker = new UserMaker(new Cashier(DBManager.getNewCashierID())); //TODO !!!!!!!!
+                        UserMaker userMaker = new UserMaker(new Cashier(CashierDBManager.getNewCashierID())); //TODO !!!!!!!!
                         userMaker.start();
                     }
                 } else {

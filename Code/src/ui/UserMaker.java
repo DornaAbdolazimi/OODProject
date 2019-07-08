@@ -1,7 +1,13 @@
 package ui;
 
+<<<<<<< HEAD
+import logic.Cashier;
+import logic.CashierDBManager;
+import logic.DBManager;
+=======
 import logic.User.Cashier;
 import logic.DBManager.DBManager;
+>>>>>>> 25ba95dad4c753f236ae7452cecce45a6e7d9cf9
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -62,7 +68,7 @@ public class UserMaker {
     }
 
     void start() {
-        userMaker.setContentPane(new UserMaker(new Cashier(DBManager.getNewCashierID())).panel1); //TODO I did something very bad here
+        userMaker.setContentPane(new UserMaker(new Cashier(CashierDBManager.getNewCashierID())).panel1); //TODO I did something very bad here
         userMaker.pack();
         userMaker.setLocationRelativeTo(null); // this line set the window in the center of the screen
         userMaker.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);

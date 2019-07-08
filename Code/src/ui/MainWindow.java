@@ -143,7 +143,11 @@ public class MainWindow {
                         try {
                             String[] itemsAndQuantity = txtFactor.getText().split("\n");
 
+<<<<<<< HEAD
+                            //cashier.createOrder(isSell, personID, itemsAndQuantity, year, month, day);
+=======
                             cashier.createOrder(isSell, personID, itemsAndQuantity);
+>>>>>>> 25ba95dad4c753f236ae7452cecce45a6e7d9cf9
                         } catch (Exception err) {
                             JOptionPane.showMessageDialog(null, "err in items and quantity");
                         }

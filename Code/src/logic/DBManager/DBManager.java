@@ -8,6 +8,7 @@ import logic.Sell_Buy.Order;
 import logic.Sell_Buy.OrderItem;
 import logic.User.Cashier;
 
+import java.lang.reflect.Executable;
 import java.sql.*;
 import java.sql.Date;
 import java.util.ArrayList;
@@ -20,42 +21,6 @@ public abstract  class  DBManager {
     private static String db_id = "id";
 
 
-    private final static String db_customer_salesman = "customer_salesman";
-    private final static String db_customer= "customer";
-    private final static String db_salesman = "salesman";
-    private final static String db_is_customer = "is_customer";
-    private final static String db_cs_email = "email";
-    private final static String db_cs_phone_number = "phone_number";
-    private final static String db_customer_first_name = "first_name";
-    private final static String db_customer_last_name = "last_name";
-    private final static String db_salesman_official_name = "official_name";
-    private final static String db_customer_score = "score";
-    private final static String db_cs_parent = "parent";
-
-
-    private final static String db_item = "item";
-    private final static String db_item_name = "name";
-    private final static String db_item_group_id = "group_id";
-    private final static String db_item_current_price = "current_price";
-    private final static String db_item_quantity = "quantity";
-
-
-    private static String db_cashier =  "cashier";
-    private static String db_cashier_first_name = "first_name";
-    private static String db_cashier_last_name = "last_name";
-    private static String db_is_manager = "is_manager";
-    private static String db_cashier_username = "username";
-    private static String db_cashier_pass = "pass";
-
-
-    public static String db_order = "orders";
-    public static String db_order_id = "order_id";
-    public static String db_item_id = "item_id";
-    public static String db_quantity = "quantity";
-    public static String db_price = "getPrice";
-    public static String db_is_selling = "is_selling";
-    public static String db_other_side = "other_side";
-    public static String db_date = "date";
 
 
     public static String db_group_name = "name";
@@ -68,6 +33,11 @@ public abstract  class  DBManager {
 
 
 
+<<<<<<< HEAD:Code/src/logic/DBManager.java
+
+
+
+=======
     public static void readCustomerSalesmanInfo ( CustomerSalesman CS){
         try  {
             myCon = DriverManager.getConnection("jdbc:mysql://localhost:3306/OOD", "root", "09132035660");
@@ -541,6 +511,7 @@ public abstract  class  DBManager {
     }
 
 
+>>>>>>> 25ba95dad4c753f236ae7452cecce45a6e7d9cf9:Code/src/logic/DBManager/DBManager.java
     public static void readGroupInfoFromDB (Group group){
         try{
             myCon = DriverManager.getConnection("jdbc:mysql://localhost:3306/OOD", "root", "09132035660");
